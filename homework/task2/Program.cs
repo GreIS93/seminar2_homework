@@ -9,7 +9,7 @@ void FillArray(int[] collection)
     collection[0] = 1;
     while (index < length)
     {
-        collection[index]++;
+        collection[index] = n;
         index++;
         n=n-1;
     }
@@ -19,9 +19,9 @@ void PrintArray(int[] col)
 {
     int count = col.Length;
     int position = 0;
-    while (position < count && (col[position] % 2 == 0))
+    while (position < count)
     {
-        Console.Write(col[position] + " ");
+        if (col[position] % 2 == 0) Console.Write(col[position] + " ");
         position++;
     }
 }
