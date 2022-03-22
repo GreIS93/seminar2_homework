@@ -6,11 +6,12 @@ void FillArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
+    collection[0] = 1;
     while (index < length)
     {
-        collection[index] = -n;
+        collection[index]++;
         index++;
-        n--;
+        n=n-1;
     }
 }
 
@@ -18,16 +19,13 @@ void PrintArray(int[] col)
 {
     int count = col.Length;
     int position = 0;
-    while (position < count)
+    while (position < count && (col[position] % 2 == 0))
     {
-        if (col[position] % 2 == 0)
-        {
-            Console.Write(col[position] + " ");
-            position++;
-        }
+        Console.Write(col[position] + " ");
+        position++;
     }
 }
-int i = Math.Abs(n) + 1;
-int[] array = new int[i];
+
+int[] array = new int[n];
 FillArray(array);
 PrintArray(array);
