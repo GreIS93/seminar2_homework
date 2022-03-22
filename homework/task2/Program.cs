@@ -2,14 +2,14 @@
 Console.WriteLine("Введите число n");
 int n = int.Parse(Console.ReadLine());
 
-
 void FillArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
+    collection[0] = 1;
     while (index < length && n > 1)
     {
-        collection[index] = n
+        collection[index] = ;
         index++;
         n--;
     }
@@ -26,7 +26,6 @@ void PrintArray(int[] col)
     }
 }
 
-int i = Math.Abs(n) * 2 + 1;
-int[] array = new int[i];
+int[] array = new int[n];
 FillArray(array);
 PrintArray(array);
