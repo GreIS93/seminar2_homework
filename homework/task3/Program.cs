@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Дано число обозначающее день недели. Выяснить является номер дня недели выходным
 Console.WriteLine("Hello, World!");

@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Найти расстояние между точками в пространстве 2D/3D
 Console.WriteLine("Hello, World!");

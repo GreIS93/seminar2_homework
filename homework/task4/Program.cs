@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// По двум заданным числам проверять является ли одно квадратом другого
 Console.WriteLine("Hello, World!");

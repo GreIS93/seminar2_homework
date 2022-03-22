@@ -1,2 +1,32 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Показать четные числа от 1 до N
+Console.WriteLine("Введите число n");
+int n = int.Parse(Console.ReadLine());
+
+
+void FillArray(int[] collection)
+{
+    int length = collection.Length;
+    int index = 0;
+    while (index < length && n > 1)
+    {
+        collection[index] = n
+        index++;
+        n--;
+    }
+}
+
+void PrintArray(int[] col)
+{
+    int count = col.Length;
+    int position = 0;
+    while (position < count)
+    {
+        Console.Write(col[position] + " ");
+        position++;
+    }
+}
+
+int i = Math.Abs(n) * 2 + 1;
+int[] array = new int[i];
+FillArray(array);
+PrintArray(array);
